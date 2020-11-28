@@ -19,7 +19,6 @@
 		52822C37256F91D60096C4A1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C36256F91D60096C4A1 /* Networking.swift */; };
 		52822C3B256F922F0096C4A1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C3A256F922F0096C4A1 /* SwiftyJSON */; };
 		52822C3F256F93050096C4A1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C3E256F93050096C4A1 /* SDWebImageSwiftUI */; };
-		52822C42256F93650096C4A1 /* TopCoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C41256F93650096C4A1 /* TopCoinsModel.swift */; };
 		52822C45256F9F230096C4A1 /* CoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C44256F9F230096C4A1 /* CoinsModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		52822C2D256F86BF0096C4A1 /* MyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCVC.swift; sourceTree = "<group>"; };
 		52822C2E256F86BF0096C4A1 /* MyCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCVC.xib; sourceTree = "<group>"; };
 		52822C36256F91D60096C4A1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		52822C41256F93650096C4A1 /* TopCoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCoinsModel.swift; sourceTree = "<group>"; };
 		52822C44256F9F230096C4A1 /* CoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +51,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		524F169025721D2B00A972DC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				52822C12256F724E0096C4A1 /* AppDelegate.swift */,
+				52822C14256F724E0096C4A1 /* SceneDelegate.swift */,
+				52822C1B256F724F0096C4A1 /* Assets.xcassets */,
+				52822C1D256F724F0096C4A1 /* LaunchScreen.storyboard */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		524F169225721D3F00A972DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52822C16256F724E0096C4A1 /* MainScreenVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		524F169425721D4F00A972DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52822C18256F724E0096C4A1 /* Main.storyboard */,
+				52822C2E256F86BF0096C4A1 /* MyCVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		524F169525721D5A00A972DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52822C2D256F86BF0096C4A1 /* MyCVC.swift */,
+				52822C36256F91D60096C4A1 /* Networking.swift */,
+				52822C44256F9F230096C4A1 /* CoinsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		52822C06256F724E0096C4A1 = {
 			isa = PBXGroup;
 			children = (
@@ -72,18 +108,11 @@
 		52822C11256F724E0096C4A1 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
-				52822C12256F724E0096C4A1 /* AppDelegate.swift */,
-				52822C14256F724E0096C4A1 /* SceneDelegate.swift */,
-				52822C16256F724E0096C4A1 /* MainScreenVC.swift */,
-				52822C18256F724E0096C4A1 /* Main.storyboard */,
-				52822C1B256F724F0096C4A1 /* Assets.xcassets */,
-				52822C1D256F724F0096C4A1 /* LaunchScreen.storyboard */,
+				524F169025721D2B00A972DC /* Source */,
+				524F169225721D3F00A972DC /* Controller */,
+				524F169425721D4F00A972DC /* View */,
 				52822C20256F724F0096C4A1 /* Info.plist */,
-				52822C2D256F86BF0096C4A1 /* MyCVC.swift */,
-				52822C2E256F86BF0096C4A1 /* MyCVC.xib */,
-				52822C36256F91D60096C4A1 /* Networking.swift */,
-				52822C41256F93650096C4A1 /* TopCoinsModel.swift */,
-				52822C44256F9F230096C4A1 /* CoinsModel.swift */,
+				524F169525721D5A00A972DC /* Model */,
 			);
 			path = CryptoTracker;
 			sourceTree = "<group>";
@@ -170,7 +199,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				52822C45256F9F230096C4A1 /* CoinsModel.swift in Sources */,
-				52822C42256F93650096C4A1 /* TopCoinsModel.swift in Sources */,
 				52822C2F256F86BF0096C4A1 /* MyCVC.swift in Sources */,
 				52822C37256F91D60096C4A1 /* Networking.swift in Sources */,
 				52822C17256F724E0096C4A1 /* MainScreenVC.swift in Sources */,

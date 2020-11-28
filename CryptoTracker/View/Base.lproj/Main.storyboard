@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main ScreenVC-->
+        <!--Crypto Currency-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainScreenVC" customModule="CryptoTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,30 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dvZ-8V-vOv">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dvZ-8V-vOv">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.035294117647058823" green="0.37254901960784315" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.90001732109999999" green="0.2029301822" blue="0.1692629457" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UUF-de-Kel">
-                                    <size key="itemSize" width="414" height="128"/>
-                                    <size key="estimatedItemSize" width="320" height="100"/>
+                                    <size key="itemSize" width="350" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCVC" id="YNQ-fC-DaJ" customClass="MyCVC" customModule="CryptoTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="10" width="414" height="128"/>
+                                        <rect key="frame" x="32" y="10" width="350" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4d8-mr-klq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.86274509803921573" green="0.11372549019607843" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.035294117649999998" green="0.37254901959999998" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dvZ-8V-vOv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Ny-Kn-kYU"/>
                             <constraint firstItem="dvZ-8V-vOv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Ut-8u-Xra"/>
@@ -49,7 +51,7 @@
                             <constraint firstItem="dvZ-8V-vOv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u4X-vD-qM8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="T9E-Ao-7GE"/>
+                    <navigationItem key="navigationItem" title="Crypto Currency" largeTitleDisplayMode="always" id="T9E-Ao-7GE" colorLabel="IBBuiltInLabel-Green"/>
                     <connections>
                         <outlet property="myCollectionView" destination="dvZ-8V-vOv" id="pf9-j9-nfz"/>
                     </connections>
@@ -63,9 +65,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ssn-6H-o7n" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JYf-oz-eGz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="JYf-oz-eGz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.035294117649999998" green="0.37254901959999998" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -78,8 +81,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
