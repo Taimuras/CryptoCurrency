@@ -16,14 +16,29 @@
 		52822C1F256F724F0096C4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52822C1D256F724F0096C4A1 /* LaunchScreen.storyboard */; };
 		52822C2F256F86BF0096C4A1 /* MyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C2D256F86BF0096C4A1 /* MyCVC.swift */; };
 		52822C30256F86BF0096C4A1 /* MyCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52822C2E256F86BF0096C4A1 /* MyCVC.xib */; };
-		52822C34256F91C80096C4A1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C33256F91C80096C4A1 /* Alamofire */; };
+		52822C34256F91C80096C4A1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C33256F91C80096C4A1 /* SwiftPackageProductDependency */; };
 		52822C37256F91D60096C4A1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C36256F91D60096C4A1 /* Networking.swift */; };
-		52822C3B256F922F0096C4A1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C3A256F922F0096C4A1 /* SwiftyJSON */; };
-		52822C3F256F93050096C4A1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C3E256F93050096C4A1 /* SDWebImageSwiftUI */; };
+		52822C3B256F922F0096C4A1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C3A256F922F0096C4A1 /* SwiftPackageProductDependency */; };
+		52822C3F256F93050096C4A1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 52822C3E256F93050096C4A1 /* SwiftPackageProductDependency */; };
 		52822C45256F9F230096C4A1 /* CoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C44256F9F230096C4A1 /* CoinsModel.swift */; };
+		9473F761823AC4951B8A1182 /* Pods_CryptoTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD41BCBF9B5D197DBFE189D /* Pods_CryptoTracker.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5211F3762573E1CD00762D17 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		15DE6953C5D180A1AFF45A6A /* Pods-CryptoTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTracker.debug.xcconfig"; path = "Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		523C41DA2573BFA50001B634 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		52822C0F256F724E0096C4A1 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52822C12256F724E0096C4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +52,8 @@
 		52822C2E256F86BF0096C4A1 /* MyCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCVC.xib; sourceTree = "<group>"; };
 		52822C36256F91D60096C4A1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		52822C44256F9F230096C4A1 /* CoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsModel.swift; sourceTree = "<group>"; };
+		783C78E0FE7E41CEE11F2D19 /* Pods-CryptoTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTracker.release.xcconfig"; path = "Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker.release.xcconfig"; sourceTree = "<group>"; };
+		ACD41BCBF9B5D197DBFE189D /* Pods_CryptoTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52822C3F256F93050096C4A1 /* SDWebImageSwiftUI in Frameworks */,
-				52822C3B256F922F0096C4A1 /* SwiftyJSON in Frameworks */,
-				52822C34256F91C80096C4A1 /* Alamofire in Frameworks */,
+				52822C3F256F93050096C4A1 /* BuildFile in Frameworks */,
+				52822C3B256F922F0096C4A1 /* BuildFile in Frameworks */,
+				52822C34256F91C80096C4A1 /* BuildFile in Frameworks */,
+				9473F761823AC4951B8A1182 /* Pods_CryptoTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +115,11 @@
 			children = (
 				52822C11256F724E0096C4A1 /* CryptoTracker */,
 				52822C10256F724E0096C4A1 /* Products */,
+				53D40BBACAC9D208A3BDBE60 /* Pods */,
+				AC8197010F4BC1E98EA8AFD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		52822C10256F724E0096C4A1 /* Products */ = {
 			isa = PBXGroup;
@@ -120,6 +141,24 @@
 			path = CryptoTracker;
 			sourceTree = "<group>";
 		};
+		53D40BBACAC9D208A3BDBE60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15DE6953C5D180A1AFF45A6A /* Pods-CryptoTracker.debug.xcconfig */,
+				783C78E0FE7E41CEE11F2D19 /* Pods-CryptoTracker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC8197010F4BC1E98EA8AFD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD41BCBF9B5D197DBFE189D /* Pods_CryptoTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52822C23256F724F0096C4A1 /* Build configuration list for PBXNativeTarget "CryptoTracker" */;
 			buildPhases = (
+				40E34D540D59ED637FA3347E /* [CP] Check Pods Manifest.lock */,
 				52822C0B256F724E0096C4A1 /* Sources */,
 				52822C0C256F724E0096C4A1 /* Frameworks */,
 				52822C0D256F724E0096C4A1 /* Resources */,
+				5211F3762573E1CD00762D17 /* Embed Frameworks */,
+				2DFF05FD8CA770E593A4BCCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,9 +179,9 @@
 			);
 			name = CryptoTracker;
 			packageProductDependencies = (
-				52822C33256F91C80096C4A1 /* Alamofire */,
-				52822C3A256F922F0096C4A1 /* SwiftyJSON */,
-				52822C3E256F93050096C4A1 /* SDWebImageSwiftUI */,
+				52822C33256F91C80096C4A1 /* SwiftPackageProductDependency */,
+				52822C3A256F922F0096C4A1 /* SwiftPackageProductDependency */,
+				52822C3E256F93050096C4A1 /* SwiftPackageProductDependency */,
 			);
 			productName = CryptoTracker;
 			productReference = 52822C0F256F724E0096C4A1 /* CryptoTracker.app */;
@@ -169,9 +211,9 @@
 			);
 			mainGroup = 52822C06256F724E0096C4A1;
 			packageReferences = (
-				52822C32256F91C80096C4A1 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				52822C39256F922F0096C4A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				52822C3D256F93050096C4A1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				52822C32256F91C80096C4A1 /* RemoteSwiftPackageReference */,
+				52822C39256F922F0096C4A1 /* RemoteSwiftPackageReference */,
+				52822C3D256F93050096C4A1 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 52822C10256F724E0096C4A1 /* Products */;
 			projectDirPath = "";
@@ -195,6 +237,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DFF05FD8CA770E593A4BCCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40E34D540D59ED637FA3347E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52822C0B256F724E0096C4A1 /* Sources */ = {
@@ -284,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -339,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -351,6 +435,7 @@
 		};
 		52822C24256F724F0096C4A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DE6953C5D180A1AFF45A6A /* Pods-CryptoTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,6 +456,7 @@
 		};
 		52822C25256F724F0096C4A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 783C78E0FE7E41CEE11F2D19 /* Pods-CryptoTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -413,7 +499,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		52822C32256F91C80096C4A1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		52822C32256F91C80096C4A1 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -421,7 +507,7 @@
 				kind = branch;
 			};
 		};
-		52822C39256F922F0096C4A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		52822C39256F922F0096C4A1 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
 			requirement = {
@@ -429,7 +515,7 @@
 				kind = branch;
 			};
 		};
-		52822C3D256F93050096C4A1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		52822C3D256F93050096C4A1 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
@@ -440,19 +526,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		52822C33256F91C80096C4A1 /* Alamofire */ = {
+		52822C33256F91C80096C4A1 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 52822C32256F91C80096C4A1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 52822C32256F91C80096C4A1 /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
-		52822C3A256F922F0096C4A1 /* SwiftyJSON */ = {
+		52822C3A256F922F0096C4A1 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 52822C39256F922F0096C4A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = 52822C39256F922F0096C4A1 /* RemoteSwiftPackageReference */;
 			productName = SwiftyJSON;
 		};
-		52822C3E256F93050096C4A1 /* SDWebImageSwiftUI */ = {
+		52822C3E256F93050096C4A1 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 52822C3D256F93050096C4A1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			package = 52822C3D256F93050096C4A1 /* RemoteSwiftPackageReference */;
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */

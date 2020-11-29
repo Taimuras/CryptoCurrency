@@ -72,6 +72,7 @@ class MainScreenVC: UIViewController{
         if segue.identifier == detailSegue {
             if let vc = segue.destination as? DetailVC {
                 vc.name = item.name
+                vc.barTitle = item.fullName
             }
         }
     }
