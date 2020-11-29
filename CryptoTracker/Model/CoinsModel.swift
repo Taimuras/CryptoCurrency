@@ -12,4 +12,5 @@ struct CoinsModel: Decodable{
     let fullName: String
     let priceUSD: String
     let iamgeURL: String
+    let name: String
 }

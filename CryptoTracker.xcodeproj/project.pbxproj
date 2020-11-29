@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523C41DB2573BFA50001B634 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C41DA2573BFA50001B634 /* DetailVC.swift */; };
 		52822C13256F724E0096C4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C12256F724E0096C4A1 /* AppDelegate.swift */; };
 		52822C15256F724E0096C4A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C14256F724E0096C4A1 /* SceneDelegate.swift */; };
 		52822C17256F724E0096C4A1 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52822C16256F724E0096C4A1 /* MainScreenVC.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523C41DA2573BFA50001B634 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		52822C0F256F724E0096C4A1 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52822C12256F724E0096C4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52822C14256F724E0096C4A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				52822C16256F724E0096C4A1 /* MainScreenVC.swift */,
+				523C41DA2573BFA50001B634 /* DetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				52822C17256F724E0096C4A1 /* MainScreenVC.swift in Sources */,
 				52822C13256F724E0096C4A1 /* AppDelegate.swift in Sources */,
 				52822C15256F724E0096C4A1 /* SceneDelegate.swift in Sources */,
+				523C41DB2573BFA50001B634 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
