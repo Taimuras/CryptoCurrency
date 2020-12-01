@@ -53,9 +53,13 @@ class DetailVC: UIViewController, ChartViewDelegate {
     
     func lineChartData() {
         let set = LineChartDataSet(entries: entries)
-        set.colors = ChartColorTemplates.joyful()
+        lineChart.noDataText = "Handling Data From API"
+        set.colors = [UIColor(red: 255 / 255, green: 205 / 255, blue: 0 / 255, alpha: 1)]
+        lineChart.xAxis.labelPosition = .bottom
         let data = LineChartData(dataSet: set)
         lineChart.data = data
+        lineChart.animate(xAxisDuration: 1.0, yAxisDuration: 0)
+        
         
     }
 
